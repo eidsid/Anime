@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*navbar*/
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background: unset;
+}
+
+.navbar>a {
+    font-size: 35px;
+    color: yellowgreen!important;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    color: rgb(238, 238, 238)!important;
+}
+
+.navbar ul li a:hover {
+    opacity: .7;
+    background-color: unset;
+}
+
+.dropdown-menu {
+    columns: 3;
+    text-align: justify;
+    background-color: hsla(105, 5%, 15%, 0.904);
+}
+
+@media only screen and (max-width:990px) {
+    .navbar {
+        width: 100vw;
+    }
+    .dropdown-menu {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:591px) {
+    .dropdown-menu {
+        columns: 2;
+        font-size: 5vmin;
+        width: 90vmin;
+    }
+}
+
+.sticky {
+    background-color: rgb(37, 40, 41);
+    position: fixed;
+    top: 0;
+    transition: 1s;
+}
+
+.fa-bars {
+    color: white !important;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(129, 129, 127), rgb(10, 24, 24));
+}
+
+
+/*navbar!*/
+
+
+/*banner*/
+
+.banner {
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10vmin;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner h1 {
+    color: rgb(255, 255, 255);
+    margin: 5vmin;
+    margin-bottom: 2vmin;
+    text-align: center;
+}
+
+.banner p {
+    color: rgb(255, 250, 250);
+    font-size: 1.2rem;
+}
+
+
+/*section1*/
+
+.section1 img {
+    top: 0%;
+    width: 100%;
+    height: 280px;
+}
+
+.section1 .card {
+    padding-top: 0%;
+    height: 280px !important;
+    overflow: hidden;
+    padding-bottom: 2vmin;
+    text-align: center;
+    margin-bottom: 2vmin;
+    background-color: gray;
+    opacity: .4;
+    transition: 1s;
+}
+
+.section1 .card:hover {
+    z-index: 1;
+    transform: scale(1.2);
+    background-color: black;
+    opacity: 1;
+    transition: 1s;
+    height: 460px !important;
+    box-shadow: 0 0 10px rgb(3, 58, 77), 0 0 100px rgb(5, 39, 51), 0 0 150px rgb(3, 58, 77);
+}
+
+@media only screen and (min-width:1150px) {
+    .section1 .card:hover {
+        transform: scale(1.5);
+    }
+}
+
+.section1 .card .content h1 {
+    margin-top: 2vmin;
+    color: rgb(179, 174, 174);
+}
+
+a {
+    text-decoration: unset !important;
+}
+
+.section1 .card .content button {
+    background: unset;
+    border: unset;
+}
+
+.section1 .card .content button a {
+    color: rgb(255, 253, 253);
+    font-size: 1.2rem;
+}
+
+.section1 .card .content button:hover a {
+    font-weight: bold;
+}
+
+
+/*section1!*/
+
+
+/*footer*/
+
+footer {
+    opacity: 0.9;
+    margin-top: 10vmin;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0) !important;
+}
+
+.footerp {
+    font-size: 1.2rem !important;
+}
+
+footer h1,
+img {
+    margin-top: 5vmin;
+}
+
+footer .mynav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.5rem;
+}
+
+footer .myfa i {
+    background: unset;
+    width: 30px;
+    margin: 5px;
+}

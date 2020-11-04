@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*navbar*/
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    color: whitesmoke !important;
+}
+
+.navbar>a {
+    font-size: 35px;
+    color: rgb(0, 171, 228)!important;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    color: rgb(69, 208, 255)!important;
+}
+
+.navbar ul li a:hover {
+    opacity: .7;
+    background-color: unset;
+}
+
+.dropdown-menu {
+    columns: 3;
+    text-align: justify;
+    background-color: hsla(195, 100%, 51%, 0.153);
+}
+
+@media only screen and (max-width:990px) {
+    .navbar {
+        width: 100vw;
+        background-color: rgba(4, 141, 165, 0.74);
+    }
+    .navbar ul li a {
+        color: rgb(0, 204, 255) !important;
+    }
+    .dropdown-menu {
+        width: 100%;
+        background-color: rgba(190, 190, 47, 0.096);
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width:591px) {
+    .dropdown-menu {
+        columns: 2;
+        font-size: 5vmin;
+        width: 90vmin;
+    }
+}
+
+.sticky {
+    background-color: rgb(2, 40, 53);
+    position: fixed;
+    top: 0;
+    transition: 1s;
+}
+
+.dropdown-menuscroll {
+    background: rgba(8, 8, 56, 0.801) !important;
+}
+
+.fa-bars {
+    color: lightblue;
+}
+
+
+/*navbar!*/
+
+
+/*banner*/
+
+.banner {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(./lbl/images/animebannerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 10vmin;
+}
+
+.banner h1 {
+    margin-top: 55vmin;
+    color: rgb(0, 191, 255);
+    font-size: 60px;
+    animation-name: anime;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+/*animation*/
+
+@keyframes anime {
+    0% {
+        box-shadow: 0px 0px 40px, 0px 0px 40px, 0px 0px 60px rgb(10, 170, 219);
+    }
+    25% {
+        opacity: 0.6;
+    }
+    50% {
+        box-shadow: 0px 0px 40px, 0px 0px 40px, 0px 0px 60px rgb(198, 219, 10);
+    }
+}
+
+.banner p {
+    margin: 6vmin;
+    color: rgb(253, 253, 2);
+}
+
+@media only screen and (max-width:798px) {
+    .banner h1 {
+        margin-top: 40vh;
+        font-size: 7vmin;
+    }
+    .banner p {
+        font-size: 5vmin;
+    }
+}
+
+.banner .button a {
+    display: grid;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.banner .button a:hover {
+    transition-delay: 1s;
+    color: rgb(61, 199, 245);
+    box-shadow: 0px 0px 10px, 0px 0px 40px, 0px 0px 60px rgb(14, 195, 255);
+}
+
+.banner .button span {
+    display: block;
+    position: absolute;
+}
+
+
+/*button animation*/
+
+.banner .button a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(69, 208, 255);
+}
+
+.banner .button a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.banner .button a span:nth-child(2) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(69, 208, 255);
+}
+
+.banner .button a:hover span:nth-child(2) {
+    right: 100%;
+    transition: 1s;
+}
+
+
+/*button animation!*/
+
+
+/*banner!*/
+
+
+/*mian*/
+
+
+/*frist section*/
+
+.section1 {
+    background: linear-gradient(#00f7f7, #23ff06);
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.section1 .header h1 {
+    margin: 7vmin;
+    font-weight: 900;
+    color: rgb(12, 8, 73);
+    font-size: 8vmin;
+}
+
+.section1 .header p {
+    color: rgb(53, 80, 3);
+    font-size: 3vmin;
+    padding: 7vmin;
+    padding-bottom: 0vmin;
+}
+
+.section1 .card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 330px;
+}
+
+.section1 .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 10px;
+    background: none;
+    transition: 0.25s;
+    border: none;
+}
+
+.section1 .card .box {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.section1 .card .box h4 {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.section1 .card .box p {
+    color: teal;
+    margin-top: 5%;
+}
+
+.section1 .card .back-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(rgb(6, 247, 247), rgb(209, 255, 4));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.section1 .card .back-content p {
+    padding: 6%;
+    padding-bottom: 0%;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.section1 .card .back-content .stars {
+    margin: 2%;
+    font-size: 1.5rem;
+    color: rgb(2, 16, 146);
+}
+
+.section1 .card .back-content .watch {
+    padding: 5%;
+}
+
+.section1 .card .back-content h4 {
+    color: rgb(4, 13, 66);
+}
+
+.section1 .card .back-content button {
+    background-color: unset;
+    border: unset;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: -10%;
+    padding: 5px 20px;
+}
+
+.section1 .card .back-content button:hover {
+    background-color: rgb(6, 252, 227);
+}
+
+a {
+    text-decoration: unset !important;
+}
+
+.section1 .card:hover .back-content {
+    visibility: visible;
+    transition: 0.25s;
+    opacity: 1;
+}
+
+.latest {
+    background-color: rgb(11, 58, 73);
+    padding: 12px 20px;
+    font-size: 120%;
+    border: unset;
+    border-radius: 10px;
+    margin: 5vmin;
+    transition: 0.5s;
+}
+
+.latest:hover {
+    transition: 0.5s;
+    background-color: rgb(2, 141, 192);
+    padding: 12px 20px;
+    font-size: 120%;
+    border: unset;
+    border-radius: 10px;
+    margin: 5vmin;
+    box-shadow: 0px 0px 10px rgb(3, 185, 218), 0px 0px 40px rgb(3, 185, 218), 0px 0px 60px rgb(3, 185, 218);
+}
+
+
+/*frist section!*/
+
+
+/*section2*/
+
+.section2 {
+    padding: 5vmin;
+    text-align: center;
+    background: linear-gradient(cornflowerblue, lightblue);
+}
+
+.section2 .header h2 {
+    color: rgb(1, 1, 56);
+    margin-bottom: 5vmin;
+    font-size: 8vmin;
+}
+
+.section2 p {
+    color: rgb(1, 1, 56);
+    margin: 5vmin;
+    font-size: 2.5vmin;
+}
+
+.section2 video {
+    border: 7px solid rgb(49, 49, 49);
+    min-width: 80vmin;
+    max-width: 400px;
+}
+
+@media only screen and (max-width:1300px) {
+    .section2 video {
+        width: 70vmin;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .section2 p {
+        font-size: 16px;
+    }
+}
+
+
+/*section2!*/
+
+
+/*section3*/
+
+.section3 {
+    text-align: center;
+}
+
+.section3 h1 {
+    font-weight: bold;
+    color: rgb(11, 11, 173);
+}
+
+.section3 .newsellter {
+    padding-top: 4vmin;
+    height: 40vmin;
+    margin: 5vmin;
+    background-blend-mode: multiply;
+    background-image: url(./lbl/images/bg-45.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section3 .newsellter input {
+    width: 250%;
+    border-radius: 20px;
+    margin-right: 3%;
+}
+
+.section3 .newsellter button {
+    border-radius: 20px !important;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.section3 .newsellter h1 {
+    padding-top: 5%;
+    color: white;
+    font-size: 200%;
+    margin: 5vmin;
+}
+
+.section3 .newsellter p {
+    color: white;
+    margin-bottom: 4vmin;
+}
+
+@media only screen and (max-width:350px) {
+    .section3 .newsellter {
+        padding-top: 4vmin;
+        height: 60vmin;
+        margin: 5vmin;
+        background-blend-mode: multiply;
+        background-image: url(./lbl/images/bg-45.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .section3 .newsellter input {
+        width: 70%;
+        border-radius: 20px;
+        margin-left: 5vmin;
+    }
+    .section3 .newsellter button {
+        border-radius: 20px !important;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+    .section3 .newsellter h1 {
+        padding-top: 5%;
+        color: white;
+        font-size: 120%;
+    }
+    .section3 .newsellter p {
+        color: white;
+        margin-bottom: 3%;
+    }
+}
+
+
+/*section3!*/
+
+
+/*section4*/
+
+.section4 {
+    padding: 3vmin;
+    background: linear-gradient(yellow, rgb(83, 235, 184));
+}
+
+.section4 h1 {
+    margin: 10vmin;
+}
+
+.section4 label {
+    margin-top: 3vmin;
+}
+
+.section4 input {
+    height: 2.5rem;
+}
+
+.section4 button {
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-top: 5vmin;
+    font-size: 2.5vmin;
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    transition: 0.40s;
+    background: unset;
+}
+
+.section4 button:hover {
+    transition: 0.50s;
+    background-color: rgb(3, 39, 3);
+}
+
+
+/*section4 !*/
+
+.scroll_To_Top {
+    border-radius: 50px;
+    margin: 5vmin;
+    margin-right: 5vmin;
+    width: 80px;
+    height: 70px;
+    transform: rotate(90deg);
+    transition: 0.5s;
+    float: right;
+    -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+.scroll_To_Top:hover {
+    transition: 0.5s;
+    width: 90px;
+    height: 85px;
+}
+
+
+/*mian!*/
+
+
+/*footer*/
+
+footer {
+    margin-top: 10vmin;
+    background-color: black;
+    color: whitesmoke !important;
+}
+
+footer h1,
+img {
+    margin-top: 5vmin;
+}
+
+footer .mynav a {
+    color: whitesmoke !important;
+    text-decoration: none;
+}
+
+footer .mynav a:hover {
+    color: rgb(255, 8, 8) !important;
+}
+
+footer .myfa i {
+    background-color: rgba(194, 194, 194, 0.1);
+    width: 30px;
+    margin: 5px;
+}
