@@ -11,6 +11,7 @@
     width: 100%;
     z-index: 1;
     background: unset;
+    background: linear-gradient(rgb(173, 171, 171), rgb(75, 75, 75));
 }
 
 .navbar>a {
@@ -130,7 +131,7 @@ body {
 
 @media only screen and (min-width:1150px) {
     .section1 .card:hover {
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
 }
 
